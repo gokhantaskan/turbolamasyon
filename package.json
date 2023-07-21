@@ -1,0 +1,23 @@
+{
+  "name": "acme-monorepo",
+  "private": true,
+  "packageManager": "pnpm@8.6.9",
+  "scripts": {
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter='./packages/**'",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{md,yaml,css,scss}\" -l -u",
+    "clean": "rimraf --glob **/.next **/.turbo **/dist",
+    "clean:nm": "rimraf --glob **/node_modules"
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@turbo/gen": "^1.10.9",
+    "eslint": "^7.32.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "turbo": "latest"
+  }
+}

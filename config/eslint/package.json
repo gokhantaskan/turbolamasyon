@@ -1,0 +1,18 @@
+{
+  "name": "@acme/eslint-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-next": "^13.4.10",
+    "eslint-config-turbo": "^1.10.9",
+    "eslint-plugin-react": "7.28.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0"
+  }
+}
