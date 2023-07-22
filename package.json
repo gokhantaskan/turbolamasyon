@@ -8,7 +8,7 @@
     "build:config": "turbo run build --filter='./config/**'",
     "dev": "turbo run dev",
     "start": "turbo run start",
-    "lint": "turbo lint",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{md,yaml,css,scss}\" -l -u --ignore-path .eslintignore",
     "clean": "rimraf --glob **/.next **/.turbo **/dist",
     "clean:nm": "rimraf --glob **/node_modules",
