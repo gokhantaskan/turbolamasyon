@@ -1,4 +1,4 @@
-export default {
+const appconfig = {
   theme: {
     colors: {
       white: "#ffffff",
@@ -55,3 +55,5 @@ export default {
     },
   },
 };
+
+export default appconfig;

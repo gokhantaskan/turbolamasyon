@@ -2,6 +2,11 @@
   "name": "@acme/eslint-config",
   "version": "0.0.0",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "base/index.js",
+    "react/index.js"
+  ],
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
