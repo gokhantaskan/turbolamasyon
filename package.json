@@ -17,7 +17,7 @@
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@turbo/gen": "^1.10.9",
-    "eslint": "^7.32.0",
+    "eslint": "^8.45.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
