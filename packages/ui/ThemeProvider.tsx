@@ -18,8 +18,6 @@ export const ThemeProvider = ({
   children: ReactNode;
 }) => {
   const theme = useMemo(() => {
-    console.log("mode", colorMode);
-
     return createTheme(
       deepmerge(defaultTheme, colorMode === "light" ? lightTheme : darkTheme),
     );

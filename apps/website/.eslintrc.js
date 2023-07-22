@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@acme/eslint-config/react"],
+  extends: ["@acme/eslint-config/nextjs"],
 };

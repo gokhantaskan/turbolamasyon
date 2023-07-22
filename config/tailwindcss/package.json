@@ -14,10 +14,12 @@
     "access": "public"
   },
   "scripts": {
+    "lint": "eslint \"src/**/*\" --fix",
     "dev": "tsup --watch",
     "build": "tsup"
   },
   "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
     "tailwindcss": "^3.3.3",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"

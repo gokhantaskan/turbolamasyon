@@ -130,6 +130,9 @@ importers:
         specifier: workspace:*
         version: link:../../packages/appconfig
     devDependencies:
+      '@acme/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
@@ -144,6 +147,9 @@ importers:
 
   packages/appconfig:
     devDependencies:
+      '@acme/eslint-config':
+        specifier: workspace:*
+        version: link:../../config/eslint
       tsup:
         specifier: ^7.1.0
         version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
