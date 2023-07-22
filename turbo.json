@@ -26,6 +26,14 @@
         "./packages/**/dist/**"
       ]
     },
+    "build:config": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "./config/**/dist/**"
+      ]
+    },
     "start": {
       "dependsOn": [
         "^build"

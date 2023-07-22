@@ -9,7 +9,7 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
-    "next": "^13.4.10",
+    "next": "^13.4.12",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,8 +23,8 @@
     "@types/react-dom": "^18.2.7",
     "appconfig": "workspace:*",
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.26",
-    "sass": "^1.64.0",
+    "postcss": "^8.4.27",
+    "sass": "^1.64.1",
     "tailwindcss": "^3.3.3",
     "tsconfig": "workspace:*",
     "typescript": "^5.1.6"

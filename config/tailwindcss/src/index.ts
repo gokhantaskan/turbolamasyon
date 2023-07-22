@@ -1,8 +1,8 @@
 import aspectRatio from "@tailwindcss/aspect-ratio";
 import appconfig from "appconfig";
+import { Config } from "tailwindcss";
 
-/** @type {import('tailwindcss').Config} */
-const config = {
+const config: Partial<Config> = {
   darkMode: "class",
   theme: {
     colors: appconfig.theme.colors,
@@ -10,7 +10,7 @@ const config = {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        "2xl": 0,
+        "2xl": "0",
       },
     },
     extend: {

@@ -1,11 +1,14 @@
 "use client";
 
-import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
-import { CssBaseline, createTheme } from "@mui/material";
-import { StyledEngineProvider } from "@mui/material/styles";
+import { createTheme, CssBaseline } from "@mui/material";
+import {
+  StyledEngineProvider,
+  ThemeProvider as MuiThemeProvider,
+} from "@mui/material/styles";
 import { deepmerge } from "@mui/utils";
 import { ReactNode, useMemo } from "react";
-import { defaultTheme, lightTheme, darkTheme } from "./theme";
+
+import { darkTheme, defaultTheme, lightTheme } from "./theme";
 
 export const ThemeProvider = ({
   colorMode,

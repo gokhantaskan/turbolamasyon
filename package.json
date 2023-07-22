@@ -5,17 +5,20 @@
   "scripts": {
     "build": "turbo run build",
     "build:packages": "turbo run build --filter='./packages/**'",
+    "build:config": "turbo run build --filter='./config/**'",
     "dev": "turbo run dev",
     "start": "turbo run start",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{md,yaml,css,scss}\" -l -u",
+    "lint": "eslint . --fix",
+    "format": "prettier --write \"**/*.{md,yaml,css,scss}\" -l -u --ignore-path .eslintignore",
     "clean": "rimraf --glob **/.next **/.turbo **/dist",
-    "clean:nm": "rimraf --glob **/node_modules"
+    "clean:nm": "rimraf --glob **/node_modules",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@turbo/gen": "^1.10.9",
     "eslint": "^7.32.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "turbo": "latest"

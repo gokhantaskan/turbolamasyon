@@ -1,9 +1,10 @@
 "use client";
 
-import { ThemeSwitch } from "@/components/ThemeSwitch";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button, ThemeProvider } from "ui";
-import { useTheme } from "next-themes";
+
+import { ThemeSwitch } from "@/components/ThemeSwitch";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(false);

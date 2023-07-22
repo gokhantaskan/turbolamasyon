@@ -1,0 +1,9 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/pnpm*.yaml
+**/dist/
+**/build/
+**/coverage/
+**/node_modules/
