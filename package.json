@@ -4,8 +4,9 @@
   "packageManager": "pnpm@8.6.9",
   "scripts": {
     "build": "turbo run build",
-    "build:packages": "turbo run build --filter='./packages/**'",
-    "build:config": "turbo run build --filter='./config/**'",
+    "build:apps": "turbo run build --filter=...{./apps/*}",
+    "build:packages": "turbo run build --filter=...{./packages/**}",
+    "build:config": "turbo run build --filter=...{./config/**}",
     "dev": "turbo run dev",
     "start": "turbo run start",
     "lint": "turbo run lint",

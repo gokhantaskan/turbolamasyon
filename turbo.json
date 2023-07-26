@@ -5,8 +5,10 @@
   ],
   "pipeline": {
     "dev": {
-      "cache": false,
-      "persistent": true
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": false
     },
     "build": {
       "dependsOn": [
@@ -23,7 +25,7 @@
         "^build"
       ],
       "outputs": [
-        "./packages/**/dist/**"
+        "dist/**"
       ]
     },
     "build:config": {
@@ -31,7 +33,7 @@
         "^build"
       ],
       "outputs": [
-        "./config/**/dist/**"
+        "dist/**"
       ]
     },
     "start": {
@@ -39,9 +41,6 @@
         "^build"
       ]
     },
-    "lint": {},
-    "clean": {
-      "cache": false
-    }
+    "lint": {}
   }
 }

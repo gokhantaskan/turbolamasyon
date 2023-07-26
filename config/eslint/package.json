@@ -5,7 +5,8 @@
   "files": [
     "index.js",
     "base/index.js",
-    "react/index.js"
+    "react/index.js",
+    "nextjs/index.js"
   ],
   "license": "MIT",
   "scripts": {
