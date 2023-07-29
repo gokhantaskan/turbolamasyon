@@ -1,4 +1,3 @@
-import "@/assets/styles/tailwind.css";
 import "@/assets/styles/index.scss";
 
 import { NextThemesProvider } from "@/components/providers/NextThemesProvider";
